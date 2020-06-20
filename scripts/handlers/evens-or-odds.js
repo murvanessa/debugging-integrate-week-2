@@ -23,8 +23,16 @@ function evensOrOddsHandler() {
     ...
   */
   let listedNumbers = '';
-  for (_; _; _) {
-
+  for (let i = 1; i <= range; i++) {
+    if(displayEvens){
+      if(i%2==0){
+        listedNumbers += i+', ';
+      }
+    } else {
+      if(i%2!=0){
+        listedNumbers += i+', ';
+      }
+    }
   }
   console.log('listedNumbers:', typeof listedNumbers, '\n', listedNumbers);
 
